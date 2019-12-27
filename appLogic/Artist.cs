@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace appLogic
 {
-    public class Class1
+    class Artist
     {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string Members { get; set; }
     }
 }
