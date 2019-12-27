@@ -13,6 +13,10 @@ namespace appLogic
         public string Style { get; set; }
         public ushort Year { get; set; }
         public string Description { get; set; }
+        public string Country { get; set; }
+
+
+
 
     }
 }
