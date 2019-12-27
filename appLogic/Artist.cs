@@ -12,6 +12,5 @@ namespace appLogic
         public string Description { get; set; }
         public string Members { get; set; }
 
-        public int num;
     }
 }
