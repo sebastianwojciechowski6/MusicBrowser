@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" WindowStyle="None">
     <Grid>
-        <Button Width="150" Height="100" HorizontalAlignment="Left" Margin="10" Name="click">
+        <Button Width="150" Height="100" HorizontalAlignment="Left" Margin="304,165,0,178.2" Name="click">
             <TextBlock Text="Przycisk"></TextBlock>
         </Button>
     </Grid>
