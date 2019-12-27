@@ -19,5 +19,7 @@ namespace appLogic
 
 
 
+
+        public int number;
     }
 }
