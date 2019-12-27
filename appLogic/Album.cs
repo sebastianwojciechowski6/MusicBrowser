@@ -15,6 +15,7 @@ namespace appLogic
         public string Description { get; set; }
         public string Country { get; set; }
 
+        private int ID;
 
 
 
