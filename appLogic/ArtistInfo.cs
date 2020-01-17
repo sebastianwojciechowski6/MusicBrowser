@@ -20,26 +20,12 @@ namespace appLogic
             Artists.Remove(artist);
         }
 
-        public void GetArtist(Artist artist)
+        public void GetArtist(string name)
         {
-            Console.WriteLine(Artists.FindAll(el => el.Equals ( artist ) ));
-        }
-    }
+            var result = Artists.FindAll(el => el.Name == name);
 
-    class Test
-    {
-        static void Testing()
-        {
-            var artistinfo = new ArtistInfo();
-            var artist = new Artist("janusz", "kelekle", "mememe");
-
-            artistinfo.AddArtist(artist);
-
-            artistinfo.GetArtist(artist);
-
-
-
-
+            foreach(var x in result)
+                Console.WriteLine($"Nazwa: {x.Name},Opis: {x.Description}, Członkowie: {x.Members}, kraj: {x.Country}");
         }
     }
 }

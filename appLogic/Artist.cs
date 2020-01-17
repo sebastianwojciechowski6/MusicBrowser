@@ -20,6 +20,5 @@ namespace appLogic
             Members = members;
             Country = country;
         }
-
     }
 }
