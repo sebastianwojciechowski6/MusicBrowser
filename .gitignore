@@ -39,3 +39,8 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+/.vs/MusicBrowser/v16
+/.vs/VSWorkspaceState.json
+*.suo
+bin
+obj

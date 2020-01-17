@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800" WindowStyle="None">
     <Grid>
         <Button Width="150" Height="100" HorizontalAlignment="Left" Margin="304,165,0,178.2" Name="click">
-            <TextBlock Text="Przycisk"></TextBlock>
+            <TextBlock Text="Przycisk" FontSize="30"></TextBlock>
         </Button>
     </Grid>
 </Window>
