@@ -8,7 +8,11 @@ namespace appLogic
 {
     public class Filters
     {
-        public 
+        List<string> Genres = new List<string>();
+        List<string> Styles = new List<string>();
+        List<ushort> Years = new List<ushort>();
+        List<string> Countries = new List<string>();
 
+        
     }
 }
