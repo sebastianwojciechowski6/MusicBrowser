@@ -25,5 +25,9 @@ namespace appLogic
             Country = country;
         }
         
+        public void AddFilterRecords()
+        {
+            
+        }
     }
 }
