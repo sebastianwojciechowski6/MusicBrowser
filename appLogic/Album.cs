@@ -15,7 +15,7 @@ namespace appLogic
         public string Description { get; set; }
         public string Country { get; set; }
 
-        public Album(string name, string genre, string style, ushort year, string description, string country)
+        public Album(string name, string genre, string style, ushort year, string description, string country, Filters allFilters)
         {
             Name = name;
             Genre = genre;
@@ -23,11 +23,8 @@ namespace appLogic
             Year = year;
             Description = description;
             Country = country;
-        }
-        
-        public void AddFilterRecords()
-        {
-            
+
+            allFilters.AddInfos(genre, style, year, country);
         }
     }
 }
