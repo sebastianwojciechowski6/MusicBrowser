@@ -15,11 +15,15 @@ namespace appLogic
         public string Description { get; set; }
         public string Country { get; set; }
 
-        private int ID;
-
-
-
-
-        public int number;
+        public Album(string name, string genre, string style, ushort year, string description, string country)
+        {
+            Name = name;
+            Genre = genre;
+            Style = style;
+            Year = year;
+            Description = description;
+            Country = country;
+        }
+        
     }
 }
