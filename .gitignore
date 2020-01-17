@@ -41,3 +41,6 @@ ehthumbs.db
 Thumbs.db
 /.vs/MusicBrowser/v16/.suo
 /.vs/VSWorkspaceState.json
+*.suo
+bin
+obj
