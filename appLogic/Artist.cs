@@ -18,5 +18,6 @@ namespace appLogic
             Description = description;
             Members = members;
         }
+
     }
 }
