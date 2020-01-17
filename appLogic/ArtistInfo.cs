@@ -10,10 +10,22 @@ namespace appLogic
     {
         List<Artist> Artists = new List<Artist>();
 
-        public void AddInfo()
+        public void AddArtist(Artist artist)
         {
-            //Artists.Add();
+            Artists.Add(artist);
         }
 
+        public void RemoveArtist(Artist artist)
+        {
+            Artists.Remove(artist);
+        }
+
+        public void GetArtist(string name)
+        {
+            var result = Artists.FindAll(el => el.Name == name);
+
+            foreach(var x in result)
+                Console.WriteLine($"Nazwa: {x.Name},Opis: {x.Description}, Członkowie: {x.Members}, kraj: {x.Country}");
+        }
     }
 }
