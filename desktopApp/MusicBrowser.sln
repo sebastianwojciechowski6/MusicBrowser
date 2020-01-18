@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appGUI", "appGUI.csproj", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appLogic", "..\appLogic\appLogic.csproj", "{4A868A0E-0FF3-4703-95C2-B71BBBAE5255}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appLogicTests", "..\appLogicTests\appLogicTests.csproj", "{336003AB-5767-4835-83B5-645E762C3FFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appUnitTests", "..\appUnitTests\appUnitTests.csproj", "{336003AB-5767-4835-83B5-645E762C3FFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
