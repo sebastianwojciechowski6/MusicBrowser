@@ -8,10 +8,10 @@ namespace appLogic
 {
     public class Artist
     {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string Members { get; set; }
-        public string Country { get; set; }
+        public string Name { get; }
+        public string Description { get; }
+        public string Members { get; }
+        public string Country { get; }
 
         public Artist(string name, string description, string members, string country)
         {
@@ -20,5 +20,6 @@ namespace appLogic
             Members = members;
             Country = country;
         }
+
     }
 }

@@ -21,7 +21,7 @@ namespace appLogic
             var allFilters = new Filters();
             var allAlbums = new Album[]
             {
-                new Album("Fat Joints Volume 1",new Artist("Sen Dog", "Latino raper known from Cypress Hill group.", "Senen Reyes", "Cuba"), "Hip Hop","Hardcore Hip Hop",2004,"Latino old school hip hop from the streets.", allFilters),
+               //new Album("Fat Joints Volume 1",new Artist("Sen Dog", "Latino raper known from Cypress Hill group.", "Senen Reyes", "Cuba"), "Hip Hop","Hardcore Hip Hop",2004,"Latino old school hip hop from the streets.", allFilters),
             };
         }
     }

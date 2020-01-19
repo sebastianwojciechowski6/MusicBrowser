@@ -7,12 +7,25 @@ namespace appLogicTests
     [TestClass]
     public class ArtistTest
     {
+        //[TestMethod]
+        //public void CreateArtistAndTestName()
+        //{
+        //    var artist = new Artist("janusz", "hip-hop", "Janusz Cygan", "Poland");
+        //    var excepted = "janusz";
+        //    Assert.AreEqual(artist.Name, excepted);
+        //}
+
         [TestMethod]
-        public void CreateArtistAndTestName()
+        public void AddAndDeleteMethod()
         {
-            var artist = new Artist("janusz", "hip-hop", "Janusz Cygan", "Poland");
-            var excepted = "janusz";
-            Assert.AreEqual(artist.Name, excepted);
+            Artist artist = new Artist("janusz", "hip-hop", "Janusz Cygan", "Poland");
+
+            ArtistsCollection artists = new ArtistsCollection();
+
+            var x = artists.GetArtist("janusz");
+
+            Assert.AreEqual(artist, x);
+
         }
     }
 }
