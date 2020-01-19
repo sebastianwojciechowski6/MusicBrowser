@@ -4,11 +4,11 @@ namespace appLogic
 {
     public class Track
     {
-        public Artist Artist { get; }
+        public string Artist { get; }
         public string Title { get; }
         public string Duration { get; }
 
-        public Track(Artist artist, string title, string duration)
+        public Track(string artist, string title, string duration)
         {
             Artist = artist;
             Title = title;
