@@ -44,10 +44,12 @@ namespace appLogic
             var albumDescription = "OG latino rap made by Sen Dog.";
 
             var allFilters = new Filters();
+
             var tempAlbum = new Album(albumName, new Artist(), albumGenre,
                 albumStyle, albumYear, albumDescription, tempTracklist, allFilters);
             AddAlbum(tempAlbum);
             
+
         }
     }
 }
