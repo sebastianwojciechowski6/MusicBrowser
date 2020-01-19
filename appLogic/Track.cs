@@ -2,13 +2,13 @@ using System.Net.NetworkInformation;
 
 namespace appLogic
 {
-    public class Tracklist
+    public class Track
     {
         public Artist Artist { get; }
         public string Title { get; }
         public string Duration { get; }
 
-        public Tracklist(Artist artist, string title, string duration)
+        public Track(Artist artist, string title, string duration)
         {
             Artist = artist;
             Title = title;

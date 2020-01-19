@@ -47,7 +47,7 @@
     <Compile Include="ArtistInfo.cs" />
     <Compile Include="Filters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tracklist.cs" />
+    <Compile Include="Track.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
