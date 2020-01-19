@@ -60,6 +60,10 @@ ehthumbs.db
 Icon?
 Thumbs.db
 
+/.vs/MusicBrowser/v16
+/.vs
+=======
+
 
 # User-specific files
 *.user
@@ -261,3 +265,4 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+
