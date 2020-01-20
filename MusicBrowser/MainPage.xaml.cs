@@ -38,11 +38,9 @@ namespace MusicBrowser
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            if (MyFrame.CanGoBack)
-            {
-                MyFrame.GoBack();
-                Home.IsSelected = true;
-            }
+            if (!MyFrame.CanGoBack) return;
+            MyFrame.GoBack();
+            Home.IsSelected = true;
         }
 
 
