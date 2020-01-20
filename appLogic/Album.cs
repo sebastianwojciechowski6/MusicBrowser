@@ -9,10 +9,8 @@
         public ushort Year { get; }
         public string Description { get; }
         public string Country { get; }
-        public Tracklist Tracklist { get; }
 
-
-        public Album(string name, Artist artist, string genre, string style, ushort year, string description, Tracklist tracklist, Filters allFilters)
+        public Album(string name, Artist artist, string genre, string style, ushort year, string description, Filters allFilters)
         {
             Name = name;
             Artist = artist;
@@ -21,7 +19,6 @@
             Year = year;
             Description = description;
             Country = artist.Country;
-            Tracklist = tracklist;
 
             allFilters.AddInfos(Genre, Style, Year, Country);
         }

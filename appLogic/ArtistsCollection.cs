@@ -8,7 +8,7 @@ namespace appLogic
 {
     public class ArtistsCollection
     {
-        List<Artist> Artists = new List<Artist>();
+        public List<Artist> Artists = new List<Artist>();
 
         public void AddArtist(Artist artist)
         { 
@@ -19,10 +19,10 @@ namespace appLogic
         {
             Artists.Remove(artist);
         }
-        public string GetArtist(string name) 
+        public Artist GetArtist(string name) 
         {
             var result = Artists.Find(el => el.Name == name);
-            return result.ToString();
+            return result;
         }
 
         public string GetArtistName(string name)
