@@ -45,7 +45,7 @@ namespace appLogic
             tempArtist = new Artist("The Notorious B.I.G.", "Christopher George Latore Wallace", "USA");
             artistsCollection.AddArtist(tempArtist);
 
-            var tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
+            tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
             AddAlbum(tempAlbum);
 
 
