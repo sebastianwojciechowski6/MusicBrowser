@@ -1,1 +1,1 @@
-C:\Users\Jakub\source\repos\MusicBrowser\MusicBrowser\MusicBrowser.csproj;x86
+D:\Users\devas\Documents\WSEI\Git\MusicBrowser\MusicBrowser\MusicBrowser.csproj;x86

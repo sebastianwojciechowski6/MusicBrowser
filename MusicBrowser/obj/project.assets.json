@@ -23339,7 +23339,7 @@
       ]
     },
     "System.Collections.NonGeneric/4.0.1": {
-      "sha512": "hMxFT2RhhlffyCdKLDXjx8WEC5JfCvNozAZxCablAuFRH74SCV4AgzE8yJCh/73bFnEoZgJ9MJmkjQ0dJmnKqA==",
+      "sha512": "XDijxhtvTsIFqXB3PbkPztkxnN4ro7kodqLQSg6mOpfWewiJcufYIV0VgO/fG9f79cic6rFfrxuCEtcru8Vz8g==",
       "type": "package",
       "path": "system.collections.nongeneric/4.0.1",
       "files": [
@@ -23378,7 +23378,7 @@
       ]
     },
     "System.Collections.Specialized/4.0.1": {
-      "sha512": "/HKQyVP0yH1I0YtK7KJL/28snxHNH/bi+0lgk/+MbURF6ULhAE31MDI+NZDerNWu264YbxklXCCygISgm+HMug==",
+      "sha512": "U9KyVjlMndHRaTDCXyFxTdLSOrDJ89OsOjpFUrZPZ58jQrA9GTmE0FDVBqIsRQ3+u1vG5ASTDP/5isnBnXydCA==",
       "type": "package",
       "path": "system.collections.specialized/4.0.1",
       "files": [
@@ -23555,7 +23555,7 @@
       ]
     },
     "System.ComponentModel.EventBasedAsync/4.0.11": {
-      "sha512": "Z7SO6vvQIR84daPE4uhaNdef9CjgjDMGYkas8epUhf0U3WGuaGgZ0Mm4QuNycMdbHUY8KEdZrtgxonkAiJaAlA==",
+      "sha512": "EvcCeJf2fcsfOVr+3Vt+2xxi1TJIc8EVq/grEWroowjFsEJc7FUAsyQ95H+CvAElv3lv233SO+ZCo7/ciaQSqQ==",
       "type": "package",
       "path": "system.componentmodel.eventbasedasync/4.0.11",
       "files": [
@@ -25855,7 +25855,7 @@
       ]
     },
     "System.Reflection.Metadata/1.3.0": {
-      "sha512": "jMSCxA4LSyKBGRDm/WtfkO03FkcgRzHxwvQRib1bm2GZ8ifKM1MX1al6breGCEQK280mdl9uQS7JNPXRYk90jw==",
+      "sha512": "piuaOy0ZH1/nNHMdwFrHP27ToY7SVblMqc+u8oEVf434IcpMmWpuU9aXWhAleRYjnKmfB3VIvGswEwiwptueXg==",
       "type": "package",
       "path": "system.reflection.metadata/1.3.0",
       "files": [
@@ -27995,28 +27995,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jakub\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\devas\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jakub\\source\\repos\\MusicBrowser\\MusicBrowser\\MusicBrowser.csproj",
+      "projectUniqueName": "D:\\Users\\devas\\Documents\\WSEI\\Git\\MusicBrowser\\MusicBrowser\\MusicBrowser.csproj",
       "projectName": "MusicBrowser",
-      "projectPath": "C:\\Users\\Jakub\\source\\repos\\MusicBrowser\\MusicBrowser\\MusicBrowser.csproj",
-      "packagesPath": "C:\\Users\\Jakub\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jakub\\source\\repos\\MusicBrowser\\MusicBrowser\\obj\\",
+      "projectPath": "D:\\Users\\devas\\Documents\\WSEI\\Git\\MusicBrowser\\MusicBrowser\\MusicBrowser.csproj",
+      "packagesPath": "C:\\Users\\devas\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\devas\\Documents\\WSEI\\Git\\MusicBrowser\\MusicBrowser\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jakub\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\devas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "uap10.0.10240"
