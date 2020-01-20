@@ -61,5 +61,10 @@ namespace MusicBrowser
                 TitleTextBox.Text = "Feee";
             }
         }
+
+        private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
