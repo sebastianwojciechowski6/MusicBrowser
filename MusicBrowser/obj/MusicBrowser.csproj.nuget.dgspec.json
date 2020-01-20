@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jakub\\source\\repos\\MusicBrowser\\MusicBrowser\\MusicBrowser.csproj": {}
+    "D:\\Users\\devas\\Documents\\WSEI\\Git\\MusicBrowser\\MusicBrowser\\MusicBrowser.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jakub\\source\\repos\\MusicBrowser\\MusicBrowser\\MusicBrowser.csproj": {
+    "D:\\Users\\devas\\Documents\\WSEI\\Git\\MusicBrowser\\MusicBrowser\\MusicBrowser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jakub\\source\\repos\\MusicBrowser\\MusicBrowser\\MusicBrowser.csproj",
+        "projectUniqueName": "D:\\Users\\devas\\Documents\\WSEI\\Git\\MusicBrowser\\MusicBrowser\\MusicBrowser.csproj",
         "projectName": "MusicBrowser",
-        "projectPath": "C:\\Users\\Jakub\\source\\repos\\MusicBrowser\\MusicBrowser\\MusicBrowser.csproj",
-        "packagesPath": "C:\\Users\\Jakub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jakub\\source\\repos\\MusicBrowser\\MusicBrowser\\obj\\",
+        "projectPath": "D:\\Users\\devas\\Documents\\WSEI\\Git\\MusicBrowser\\MusicBrowser\\MusicBrowser.csproj",
+        "packagesPath": "C:\\Users\\devas\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\devas\\Documents\\WSEI\\Git\\MusicBrowser\\MusicBrowser\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jakub\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\devas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "uap10.0.10240"
