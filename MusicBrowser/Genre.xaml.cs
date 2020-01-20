@@ -20,9 +20,9 @@ namespace MusicBrowser
     /// <summary>
     /// Pusta strona, która może być używana samodzielnie lub do której można nawigować wewnątrz ramki.
     /// </summary>
-    public sealed partial class SecondPage : Page
+    public sealed partial class Genre : Page
     {
-        public SecondPage()
+        public Genre()
         {
             this.InitializeComponent();
         }

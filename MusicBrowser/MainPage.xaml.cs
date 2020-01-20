@@ -27,7 +27,7 @@ namespace MusicBrowser
             this.InitializeComponent();
             BackButton.Visibility = Visibility.Collapsed;
             MyFrame.Navigate(typeof(Home));
-            TitleTextBox.Text = "Frrrr";
+            TitleTextBox.Text = "Main";
             Home.IsSelected = true;
         }
 
@@ -52,19 +52,20 @@ namespace MusicBrowser
             {
                 BackButton.Visibility = Visibility.Collapsed;
                 MyFrame.Navigate(typeof(Home));
-                TitleTextBox.Text = "Frrrr";
+                TitleTextBox.Text = "Main";
             }
             else if (SecondPage.IsSelected)
             {
                 BackButton.Visibility = Visibility.Visible;
-                MyFrame.Navigate(typeof(SecondPage));
-                TitleTextBox.Text = "Feee";
+                MyFrame.Navigate(typeof(Style));
+                TitleTextBox.Text = "Style";
             }
         }
 
-        private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void SearchTextBox_QuerySubmitted(SearchBox sender, SearchBoxQuerySubmittedEventArgs args)
         {
-
+            this.MyFrame.Navigate(typeof(Style), args.QueryText);
+            TitleTextBox.Text = "Style";
         }
     }
 }
