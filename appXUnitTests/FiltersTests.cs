@@ -14,6 +14,14 @@ namespace appXUnitTests
         {
             _testOutputHelper = testOutputHelper;
         }
+        [Fact]
+        public void GenreOccurenceTester()
+        {
+            var albumsCollection = new AlbumsCollection();
+
+            albumsCollection.AddAlbumsToCollection();
+            albumsCollection.GetGenres();
+        }
         
         [Fact]
         public void FiltersOcurrenceCounterTest()

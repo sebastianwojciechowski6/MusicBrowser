@@ -15,9 +15,9 @@ namespace appLogic
             Styles.Add(style);
             Years.Add(year);
             Countries.Add(country);
-            
         }
 
         public SortedList<string, uint> genresOcurrences = new SortedList<string, uint>();
+
     }
 }

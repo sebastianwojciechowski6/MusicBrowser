@@ -5,7 +5,7 @@ namespace appLogic
 {
     public class AlbumsCollection
     {
-        private List<Album> _albums = new List<Album>();
+        public List<Album> _albums = new List<Album>();
         public Filters allFilters = new Filters();
       
         // Create AddRange method which adds all albums given into parameter to _album collection
@@ -143,6 +143,20 @@ namespace appLogic
             albumYear = 1980;
             tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
             AddAlbum(tempAlbum);
+        }
+
+        public void GetGenres()
+        {
+            var albums = new AlbumsCollection();
+            foreach(var el in albums.allFilters.Genres)
+            {
+                if (!(albums.allFilters.genresOcurrences.ContainsKey(el)))
+                    albums.allFilters.genresOcurrences.Add(el, 1);
+                else albums.allFilters.genresOcurrences[el] += 1;
+            }
+
+            foreach(var el in albums.allFilters.genresOcurrences)
+                System.Console.WriteLine($"{el.Key}, {el.Value}");
         }
     }
 }
