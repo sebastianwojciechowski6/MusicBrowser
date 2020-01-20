@@ -5,8 +5,9 @@ namespace appLogic
 {
     public class AlbumsCollection
     {
-        public List<Album> _albums = new List<Album>();
-
+        private List<Album> _albums = new List<Album>();
+        public Filters allFilters = new Filters();
+      
         // Create AddRange method which adds all albums given into parameter to _album collection
         public void AddAlbum(Album album)
         {
@@ -30,7 +31,6 @@ namespace appLogic
 
         public void AddAlbumsToCollection()
         {
-            var allFilters = new Filters();
             var artistsCollection = new ArtistsCollection();
             
 

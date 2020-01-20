@@ -18,7 +18,7 @@
             Year = year;
             Country = artist.Country;
 
-            allFilters.AddInfos(Genre, Style, Year, Country);
+            allFilters.AddInfos(genre, style, year, artist.Country);
         }
     }
 }

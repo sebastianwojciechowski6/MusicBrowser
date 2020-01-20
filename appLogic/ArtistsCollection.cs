@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace appLogic
 {
     public class ArtistsCollection
     {
-        public List<Artist> Artists = new List<Artist>();
+        private List<Artist> Artists = new List<Artist>();
 
         public void AddArtist(Artist artist)
         { 
