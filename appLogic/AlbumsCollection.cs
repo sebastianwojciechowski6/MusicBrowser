@@ -26,28 +26,40 @@ namespace appLogic
             var allFilters = new Filters();
             var artistsCollection = new ArtistsCollection();
             
+
             var albumName = "Fat Joints Volume 1";
             var albumGenre = "Hip Hop";
             var albumStyle = "Hardcore Hip Hop";
-            ushort albumYear = 2004;
-            var albumDescription = "OG latino rap made by Sen Dog.";
-            
-            var tempArtist = new Artist("Sen Dog", "Cuban raper from Cypress Hill group.", "Senen Reyes", "Cuba");
+            ushort albumYear = 2006;
+
+            var tempArtist = new Artist("Sen Dog", "Senen Reyes", "Cuba");
             artistsCollection.AddArtist(tempArtist);
             
-            
-            var tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre,
-                albumStyle, albumYear, albumDescription, allFilters);
+            var tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
             AddAlbum(tempAlbum);
+
 
             albumName = "Eminem Is Back";
             albumStyle = "Gangsta";
-            albumDescription = "The famous rapper is back.";
             
-            tempArtist = new Artist("Eminem", "American raper also called Slim Shady.", "Marshall Bruce Mathers III", "United States");
+            tempArtist = new Artist("Eminem", "Marshall Bruce Mathers III", "United States");
             artistsCollection.AddArtist(tempArtist);
             
-            tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, albumDescription, allFilters);
+            tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
+            AddAlbum(tempAlbum);
+
+
+            albumName = "The Wall";
+            albumGenre = "Rock";
+            albumStyle = "Proggresive Rock";
+            albumYear = 1979;
+
+            tempArtist = new  Artist("Pink Floyd", "David Gilmour, Nick Mason, Rado Klose, Richard Wright, Roger Waters, Syd Barrett", "England");
+            artistsCollection.AddArtist(tempArtist);
+
+            tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
+            AddAlbum(tempAlbum);
+
 
         }
     }
