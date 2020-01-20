@@ -35,18 +35,14 @@
                        FontWeight="Bold"
                        Margin="20,5,0,0"/>
 
-            <Button Name="SearchButton" 
-                    RelativePanel.AlignRightWithPanel="True"
-                    FontFamily="Segoe MDL2 Assets"
-                    FontSize="36" 
-                    Content="&#xE1A3;"/>
-
-            <TextBox Name="SearchTextBox" 
-                       RelativePanel.LeftOf="SearchButton" 
-                       Height="49"
-                       Width="200"
-                       FontSize="24"
-                       PlaceholderText="Search" TextChanged="SearchTextBox_TextChanged" />
+            <SearchBox x:Name="SearchTextBox"
+                RelativePanel.AlignRightWithPanel="True"
+                FocusOnKeyboardInput="True"
+                QuerySubmitted="SearchTextBox_QuerySubmitted"
+                Height="49"
+                Width="200"
+                FontSize="24"
+                PlaceholderText="Search" />
         </RelativePanel>
 
         <SplitView Grid.Row="1" 
@@ -63,30 +59,14 @@
                             <TextBlock FontSize="24" Margin="20,0,0,0">Home</TextBlock>
                         </StackPanel>
                     </ListBoxItem>
-                    <ListBoxItem Name="ZeroPage">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE1CE;"/>
-                            <TextBlock FontSize="24" Margin="20,0,0,0">Genre</TextBlock>
-                        </StackPanel>
-                    </ListBoxItem>
+                   
                     <ListBoxItem Name="SecondPage">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE1CE;"/>
                             <TextBlock FontSize="24" Margin="20,0,0,0">Style</TextBlock>
                         </StackPanel>
                     </ListBoxItem>
-                    <ListBoxItem Name="ThirdPage">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE1CE;"/>
-                            <TextBlock FontSize="24" Margin="20,0,0,0">Country</TextBlock>
-                        </StackPanel>
-                    </ListBoxItem>
-                    <ListBoxItem Name="FourthPage">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE1CE;"/>
-                            <TextBlock FontSize="24" Margin="20,0,0,0">Year</TextBlock>
-                        </StackPanel>
-                    </ListBoxItem>
+                                                        
                 </ListBox>
             </SplitView.Pane>
             <SplitView.Content>
