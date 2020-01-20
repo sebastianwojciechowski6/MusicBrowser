@@ -5,7 +5,7 @@ namespace appLogic
 {
     public class AlbumsCollection
     {
-        private List<Album> _albums = new List<Album>();
+        public List<Album> _albums = new List<Album>();
 
         // Create AddRange method which adds all albums given into parameter to _album collection
         public void AddAlbum(Album album)
@@ -15,10 +15,17 @@ namespace appLogic
 
         // Create AllGenres collection and add all genres to it using LINQ
         public IEnumerable<string> AllGenres => _albums.Select(x => x.Genre).Distinct();
+        public IEnumerable<string> AllStyles => _albums.Select(x => x.Style).Distinct();
+        public IEnumerable<ushort> AllYears => _albums.OrderByDescending(x => x.Year).Select(x => x.Year).Distinct();
+        public IEnumerable<string> AllCountries => _albums.Select(x => x.Country).Distinct();
+        
 
         // Create AlbumByGenres collection and add all albums that are in specific Genre
         public ILookup<string, Album> AlbumsByGenres => _albums.ToLookup(x => x.Genre);
-        public ILookup<string, Album> AlbumsByStyles => _albums.ToLookup(x => x.Genre);
+        public ILookup<string, Album> AlbumsByStyles => _albums.ToLookup(x => x.Style);
+        public ILookup<ushort, Album> AlbumsByYears => _albums.ToLookup(x => x.Year);
+        public ILookup<string, Album> AlbumsByCountries => _albums.ToLookup(x => x.Country);
+        
         
 
         public void AddAlbumsToCollection()
