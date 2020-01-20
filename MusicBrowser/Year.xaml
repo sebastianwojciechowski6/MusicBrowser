@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="MusicBrowser.SecondPage"
+    x:Class="MusicBrowser.Year"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MusicBrowser"
@@ -9,6 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Image Source="Assets/Food.jpg"/>
+
     </Grid>
 </Page>
