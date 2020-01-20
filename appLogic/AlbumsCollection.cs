@@ -39,10 +39,21 @@ namespace appLogic
             AddAlbum(tempAlbum);
 
 
+            albumName = "Ready To Die";
+            albumYear = 1994;
+
+            tempArtist = new Artist("The Notorious B.I.G.", "Christopher George Latore Wallace", "USA");
+            artistsCollection.AddArtist(tempArtist);
+
+            var tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
+            AddAlbum(tempAlbum);
+
+
             albumName = "Eminem Is Back";
             albumStyle = "Gangsta";
+            albumYear = 2004;
             
-            tempArtist = new Artist("Eminem", "Marshall Bruce Mathers III", "United States");
+            tempArtist = new Artist("Eminem", "Marshall Bruce Mathers III", "USA");
             artistsCollection.AddArtist(tempArtist);
             
             tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
@@ -61,6 +72,70 @@ namespace appLogic
             AddAlbum(tempAlbum);
 
 
+            albumName = "Wish You Were Here";
+            albumYear = 1975;
+
+            tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
+            AddAlbum(tempAlbum);
+
+
+            albumName = "Abbey Road";
+            albumStyle = "Pop Rock";
+            albumYear = 1969;
+
+            tempArtist = new  Artist("The Beatles", "George Harrison, John Lennon, Paul McCartney, Pete Best, Richard Starkey, Stuart Sutcliffe", "England");
+            artistsCollection.AddArtist(tempArtist);
+
+            tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
+            AddAlbum(tempAlbum);
+
+
+            albumName = "Master Of Puppets";
+            albumStyle = "Thrash Metal";
+            albumYear = 1986;
+
+            tempArtist = new  Artist("Metallica", "James Hetfield, Cliff Burton, Kirk Hammett, Lars Ulrich", "USA");
+            artistsCollection.AddArtist(tempArtist);
+
+            tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
+            AddAlbum(tempAlbum);
+
+
+            albumName = "Kill'Em All";
+            albumYear = 1983;
+
+            tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
+            AddAlbum(tempAlbum);
+
+
+            albumName = "Ride The Lightning";
+            albumYear = 1984;
+
+            tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
+            AddAlbum(tempAlbum);
+
+
+            albumName = "Painkiller";
+            albumStyle = "Heavy Metal";
+            albumYear = 1990;
+
+            tempArtist = new Artist("Judas Priest", "Rob Halford, Glenn Tipton, K. K. Downing, Rob Halford", "England");
+            artistsCollection.AddArtist(tempArtist);
+
+            tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
+            AddAlbum(tempAlbum);
+
+
+            albumName = "Scream For Vengeance";
+            albumYear = 1982;
+
+            tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
+            AddAlbum(tempAlbum);
+
+            albumName = "British Steel";
+            albumYear = 1980;
+            tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
+            AddAlbum(tempAlbum);
         }
     }
 }
