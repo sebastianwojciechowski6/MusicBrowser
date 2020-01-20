@@ -18,12 +18,12 @@ Example
 
 <SCREENS OF A PROGRAM>
 
-### Break down into end to end tests
+### Testing
 
-Explain what these tests test and why
+Test
 
 ```
-Give an example
+Example
 ```
 
 ## Built With
