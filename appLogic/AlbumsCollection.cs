@@ -144,5 +144,19 @@ namespace appLogic
             tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
             AddAlbum(tempAlbum);
         }
+
+        public void GetGenres()
+        {
+            var albums = new AlbumsCollection();
+            foreach(var el in albums.allFilters.Genres)
+            {
+                if (!(albums.allFilters.genresOcurrences.ContainsKey(el)))
+                    albums.allFilters.genresOcurrences.Add(el, 1);
+                else albums.allFilters.genresOcurrences[el] += 1;
+            }
+
+            foreach(var el in albums.allFilters.genresOcurrences)
+                System.Console.WriteLine($"{el.Key}, {el.Value}");
+        }
     }
 }
