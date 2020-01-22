@@ -22,14 +22,6 @@ namespace appXUnitTests
         {
             _testOutputHelper = testOutputHelper;
         }
-        [Fact]
-        public void GenreOccurenceTester()
-        {
-            var albumsCollection = new AlbumsCollection();
-
-            albumsCollection.AddAlbumsToCollection();
-            albumsCollection.GetGenres();
-        }
         
         /// <summary>
         /// Shows Genres and Ocurrences in created albums.
