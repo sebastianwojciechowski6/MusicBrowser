@@ -91,6 +91,7 @@ namespace MusicBrowser
         private void SearchTextBox_QuerySubmitted(SearchBox sender, SearchBoxQuerySubmittedEventArgs args)
         {
             MyFrame.Navigate(typeof(Search), args.QueryText);
+            TitleTextBox.Text = $"Showing results for: {args.QueryText}";
         }
     }
 }
