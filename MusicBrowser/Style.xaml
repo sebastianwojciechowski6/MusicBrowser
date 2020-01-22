@@ -8,7 +8,8 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Image Source="Assets/Food.jpg"/>
+    <Grid Background="White">
+        <!-- <Image Source="Assets/Food.jpg"/>  -->
+        <ListView ItemsSource="x:Bind Albums" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Page>
