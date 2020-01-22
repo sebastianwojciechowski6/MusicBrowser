@@ -9,6 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Background="White">
+
         <GridView x:Name="someData">
             <GridView.ItemTemplate>
                 <DataTemplate>

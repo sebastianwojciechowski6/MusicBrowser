@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
+﻿using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 using MusicBrowserLogic;
 
@@ -25,8 +13,7 @@ namespace MusicBrowser
     {
         public Search()
         {
-            this.InitializeComponent();
-
+            InitializeComponent();
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -38,9 +25,7 @@ namespace MusicBrowser
             var alb = coll.GetAlbumByName(albumName);
 
             someData.ItemsSource = alb;
-            
-            //textEl.Text = $"Wynik: {e.Parameter.ToString()}";
-            
+
             base.OnNavigatedTo(e);
 
         }
