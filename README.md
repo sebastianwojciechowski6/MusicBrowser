@@ -1,10 +1,7 @@
 # Music Browser
 
 UWP app done as a project for a Object-Oriented C# Programming subject at WSEI Kraków.
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+Window application when you can find music albums and informations about them.
 
 ## Built With
 
