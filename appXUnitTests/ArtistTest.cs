@@ -1,12 +1,17 @@
-﻿using System;
-using Xunit;
+﻿using Xunit;
 using appLogic;
 
 
 namespace appXUnitTests
 {
+    /// <summary>
+    /// Testing Artist.cs
+    /// </summary>
     public class ArtistTest
     {
+        /// <summary>
+        /// Checks the Name property of Artist object.
+        /// </summary>
         [Fact]
         public void NewArtist_CheckIfNameIsCorrect()
         {
@@ -14,7 +19,10 @@ namespace appXUnitTests
 
             Assert.Equal(expected: "The Beatles", actual: artist.Name);
         }
-
+        
+        /// <summary>
+        /// Checks the Country property of Artist object.
+        /// </summary>
         [Fact]
         public void NewArtist_CheckIfCountryIsCorrect()
         {
@@ -22,7 +30,10 @@ namespace appXUnitTests
 
             Assert.Equal(expected: "USA", actual: artist.Country);
         }
-
+        
+        /// <summary>
+        /// Checks the Members property of Artist object.
+        /// </summary>
         [Fact]
         public void NewArtist_CheckIfMembersAreCorrect()
         {

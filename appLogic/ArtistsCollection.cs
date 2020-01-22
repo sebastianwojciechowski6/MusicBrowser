@@ -2,33 +2,43 @@
 
 namespace appLogic
 {
+    /// <summary>
+    /// The ArtistsCollection class contains methods that do simple operations on a collection.
+    /// </summary>
     public class ArtistsCollection
     {
-        private List<Artist> Artists = new List<Artist>();
+        /// <summary>
+        /// Collection of Artist objects.
+        /// </summary>
+        private List<Artist> _artists = new List<Artist>();
 
+        /// <summary>
+        /// Adds <paramref name="artist"/> to collection.
+        /// </summary>
+        /// <param name="artist"></param>
         public void AddArtist(Artist artist)
         { 
-            Artists.Add(artist);
+            _artists.Add(artist);
         }
-
+        
+        /// <summary>
+        /// Remove <paramref name="artist"/> from collection.
+        /// </summary>
+        /// <param name="artist"></param>
         public void RemoveArtist(Artist artist)
         {
-            Artists.Remove(artist);
+            _artists.Remove(artist);
         }
+        
+        /// <summary>
+        /// Gets Artist based which has specified <param name="name"></param>
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns>Artist object</returns>
         public Artist GetArtist(string name) 
         {
-            var result = Artists.Find(el => el.Name == name);
+            var result = _artists.Find(el => el.Name == name);
             return result;
-        }
-
-        public string GetArtistName(string name)
-        {
-            List<Artist> result = Artists.FindAll(el => el.Name == name);
-
-            foreach (var x in result)
-                return $"Nazwa: {x.Name}, Członkowie: {x.Members}, Kraj: {x.Country}";
-
-            return result.ToString();
         }
     }
 }
