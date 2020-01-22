@@ -1,7 +1,7 @@
 # Music Browser
 
 UWP app done as a project for a Object-Oriented C# Programming subject at WSEI Kraków.
-Window application when you can find music albums and informations about them.
+Window application where you can find music albums and informations about them.
 
 ## Built With
 
