@@ -1,15 +1,23 @@
-using System;
-using System.Linq;
 using Xunit;
 using Xunit.Abstractions;
 using appLogic;
 
 namespace appXUnitTests
 {
+    /// <summary>
+    /// Testing Filters.cs
+    /// </summary>
     public class FiltersTests
     {
+        /// <summary>
+        /// Auxiliary variable for testing output.
+        /// </summary>
         private readonly ITestOutputHelper _testOutputHelper;
 
+        /// <summary>
+        /// FiltersTests constructor.
+        /// </summary>
+        /// <param name="testOutputHelper"></param>
         public FiltersTests(ITestOutputHelper testOutputHelper)
         {
             _testOutputHelper = testOutputHelper;
@@ -23,16 +31,18 @@ namespace appXUnitTests
             albumsCollection.GetGenres();
         }
         
+        /// <summary>
+        /// Shows Genres and Ocurrences in created albums.
+        /// </summary>
         [Fact]
         public void FiltersOcurrenceCounterTest()
         {
             var albumsCollection = new AlbumsCollection();
             
-            albumsCollection.AddAlbumsToCollection();
+            albumsCollection.CreateAlbums();
             
             foreach (var el in albumsCollection.allFilters.Genres)
             {
-                //_testOutputHelper.WriteLine(el);
                 if (!albumsCollection.allFilters.genresOcurrences.ContainsKey(el))
                 {
                     albumsCollection.allFilters.genresOcurrences.Add(el, 1);
