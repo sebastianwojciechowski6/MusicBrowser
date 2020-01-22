@@ -34,7 +34,7 @@ namespace appLogic
         /// Creates a collection which is provided for having Genres ocurrences.
         /// </summary>
         public SortedList<string, uint> genresOcurrences = new SortedList<string, uint>();
-        
+
         /// <summary>
         /// Creates a collection which is provided for having Styles ocurrences.
         /// </summary>
