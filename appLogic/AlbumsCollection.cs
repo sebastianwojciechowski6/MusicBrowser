@@ -165,6 +165,9 @@ namespace appLogic
             AddAlbum(tempAlbum);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void GetGenres()
         {
             var albums = new AlbumsCollection();
