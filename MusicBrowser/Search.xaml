@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="MusicBrowser.Search"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MusicBrowser"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="White">
+
+        <GridView x:Name="someData">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+
+                    <StackPanel Width="264"  Padding="12" Orientation="Horizontal" AutomationProperties.Name="{Binding Name}">
+                        <StackPanel Margin="20,0,0,0">
+                            <TextBlock  Foreground="Black" Text="{Binding Name}" FontSize="20" HorizontalAlignment="Center"/>
+                            <TextBlock Foreground="Black" Text="{Binding Artist.Name}"/>
+                            <TextBlock Text="{Binding Genre}" Foreground="Black"/>
+                            <TextBlock  Text="{Binding Style}" Foreground="Black"/>
+                            <TextBlock  Text="{Binding Year}" Foreground="Black"/>
+                            <TextBlock Text="{Binding Country}" Foreground="Black"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsWrapGrid MaximumRowsOrColumns="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="20" />
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+
+        </GridView>
+    </Grid>
+</Page>
