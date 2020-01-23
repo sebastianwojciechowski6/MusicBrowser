@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
-namespace appLogic
-{    
+namespace MusicBrowserLogic
+{
     /// <summary>
     /// The Filters class contains collections of all filters.
     /// </summary>
@@ -39,12 +39,12 @@ namespace appLogic
         /// Creates a collection which is provided for having Styles ocurrences.
         /// </summary>
         public SortedList<string, uint> stylesOcurrences = new SortedList<string, uint>();
-        
+
         /// <summary>
         /// Creates a collection which is provided for having Years ocurrences.
         /// </summary>
         public SortedList<ushort, uint> yearsOcurrences = new SortedList<ushort, uint>();
-        
+
         /// <summary>
         /// Creates a collection which is provided for having Countries ocurrences.
         /// </summary>

@@ -116,8 +116,17 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Albums.xaml.cs">
+      <DependentUpon>Albums.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Search.xaml.cs">
+      <DependentUpon>Search.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Country.xaml.cs">
+      <DependentUpon>Country.xaml</DependentUpon>
     </Compile>
     <Compile Include="Genre.xaml.cs">
       <DependentUpon>Genre.xaml</DependentUpon>
@@ -142,12 +151,41 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\BadgeLogo.scale-100.png" />
+    <Content Include="Assets\BadgeLogo.scale-125.png" />
+    <Content Include="Assets\BadgeLogo.scale-150.png" />
+    <Content Include="Assets\BadgeLogo.scale-200.png" />
+    <Content Include="Assets\BadgeLogo.scale-400.png" />
     <Content Include="Assets\Financial.jpg" />
     <Content Include="Assets\Food.jpg" />
-    <Content Include="Assets\Icon.png" />
+    <Content Include="Assets\Icon.altform-lightunplated_targetsize-16.png" />
+    <Content Include="Assets\Icon.altform-lightunplated_targetsize-24.png" />
+    <Content Include="Assets\Icon.altform-lightunplated_targetsize-256.png" />
+    <Content Include="Assets\Icon.altform-lightunplated_targetsize-32.png" />
+    <Content Include="Assets\Icon.altform-lightunplated_targetsize-48.png" />
+    <Content Include="Assets\Icon.altform-unplated_targetsize-16.png" />
+    <Content Include="Assets\Icon.altform-unplated_targetsize-24.png" />
+    <Content Include="Assets\Icon.altform-unplated_targetsize-256.png" />
+    <Content Include="Assets\Icon.altform-unplated_targetsize-32.png" />
+    <Content Include="Assets\Icon.altform-unplated_targetsize-48.png" />
+    <Content Include="Assets\Icon.scale-100.png" />
+    <Content Include="Assets\Icon.scale-125.png" />
+    <Content Include="Assets\Icon.scale-150.png" />
+    <Content Include="Assets\Icon.scale-200.png" />
+    <Content Include="Assets\Icon.scale-400.png" />
+    <Content Include="Assets\Icon.targetsize-16.png" />
+    <Content Include="Assets\Icon.targetsize-24.png" />
+    <Content Include="Assets\Icon.targetsize-256.png" />
+    <Content Include="Assets\Icon.targetsize-32.png" />
+    <Content Include="Assets\Icon.targetsize-48.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-125.png" />
+    <Content Include="Assets\SplashScreen.scale-150.png" />
+    <Content Include="Assets\SplashScreen.scale-200.jpg" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-400.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
-    <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
@@ -159,6 +197,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Albums.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Search.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Country.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Genre.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -184,6 +234,12 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.9</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MusicBrowserLogic\MusicBrowserLogic.csproj">
+      <Project>{fcc57868-1454-4f1a-b4de-db961bf90932}</Project>
+      <Name>MusicBrowserLogic</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
