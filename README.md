@@ -9,9 +9,9 @@ Window application where you can find music albums and informations about them.
 
 ## Authors
 
-* Jakub Świerczek -  UWP implementation - [Jakubs1](https://github.com/Jakubs1)
-* Jędrzej Ruta - Artists, filtering and UWP implementation - [jedrzejruta](https://github.com/jedrzejruta)
-* Sebastian Wojciechowski - Team leader, albums and filtering features implementation - [sebastianwojciechowski6](https://github.com/sebastianwojciechowski6)
+* Jakub Świerczek -  UWP design - [Jakubs1](https://github.com/Jakubs1)
+* Jędrzej Ruta - Artists, filters and UWP logic - [jedrzejruta](https://github.com/jedrzejruta)
+* Sebastian Wojciechowski - Team leader, albums implementation, XML documentation - [sebastianwojciechowski6](https://github.com/sebastianwojciechowski6)
 
 List of [contributors](https://github.com/sebastianwojciechowski6/MusicBrowser/contributors)
 
