@@ -3,42 +3,62 @@ using System.Linq;
 
 namespace appLogic
 {
+    /// <summary>
+    /// The AlbumsCollection class is destined to generate albums and store them.
+    /// </summary>
     public class AlbumsCollection
     {
-        public List<Album> _albums = new List<Album>();
+        /// <summary>
+        /// Collection that will store Album objects.
+        /// </summary>
+        public List<Album> albums = new List<Album>();
+        
+        /// <summary>
+        /// Object that is used to create Album objects.
+        /// </summary>
         public Filters allFilters = new Filters();
       
-        // Create AddRange method which adds all albums given into parameter to _album collection
+        /// <summary>
+        /// Adds <paramref name="album"/> to albums collection.
+        /// </summary>
+        /// <param name="album">Album</param>
         public void AddAlbum(Album album)
         {
-            _albums.Add(album);
+            albums.Add(album);
         }
 
-        // Create AllGenres collection and add all genres to it using LINQ
-        public IEnumerable<string> AllGenres => _albums.Select(x => x.Genre).Distinct();
-        public IEnumerable<string> AllStyles => _albums.Select(x => x.Style).Distinct();
-        public IEnumerable<ushort> AllYears => _albums.OrderByDescending(x => x.Year).Select(x => x.Year).Distinct();
-        public IEnumerable<string> AllCountries => _albums.Select(x => x.Country).Distinct();
+        /// <summary>
+        /// Gets distinct Genres from albums collection using LINQ.
+        /// </summary>
+        public IEnumerable<string> AllGenres => albums.Select(x => x.Genre).Distinct();
         
+        /// <summary>
+        /// Gets distinct Styles from albums collection using LINQ.
+        /// </summary>
+        public IEnumerable<string> AllStyles => albums.Select(x => x.Style).Distinct();
+        
+        /// <summary>
+        /// Gets distinct Years from albums collection using LINQ.
+        /// </summary>
+        public IEnumerable<ushort> AllYears => albums.Select(x => x.Year).Distinct();
+        
+        /// <summary>
+        /// Gets distinct Countries from albums collection using LINQ.
+        /// </summary>
+        public IEnumerable<string> AllCountries => albums.Select(x => x.Country).Distinct();
 
-        // Create AlbumByGenres collection and add all albums that are in specific Genre
-        public ILookup<string, Album> AlbumsByGenres => _albums.ToLookup(x => x.Genre);
-        public ILookup<string, Album> AlbumsByStyles => _albums.ToLookup(x => x.Style);
-        public ILookup<ushort, Album> AlbumsByYears => _albums.ToLookup(x => x.Year);
-        public ILookup<string, Album> AlbumsByCountries => _albums.ToLookup(x => x.Country);
-        
-        
-
-        public void AddAlbumsToCollection()
+        /// <summary>
+        /// Creates Album objects based on created Artist objects and variables, adds Artist to albums collection.
+        /// </summary>
+        public void CreateAlbums()
         {
             var artistsCollection = new ArtistsCollection();
             
-
             var albumName = "Fat Joints Volume 1";
             var albumGenre = "Hip Hop";
             var albumStyle = "Hardcore Hip Hop";
             ushort albumYear = 2006;
-
+            
             var tempArtist = new Artist("Sen Dog", "Senen Reyes", "Cuba");
             artistsCollection.AddArtist(tempArtist);
             
@@ -143,6 +163,20 @@ namespace appLogic
             albumYear = 1980;
             tempAlbum = new Album(albumName, artistsCollection.GetArtist(tempArtist.Name), albumGenre, albumStyle, albumYear, allFilters);
             AddAlbum(tempAlbum);
+        }
+
+        public void GetGenres()
+        {
+            var albums = new AlbumsCollection();
+            foreach(var el in albums.allFilters.Genres)
+            {
+                if (!(albums.allFilters.genresOcurrences.ContainsKey(el)))
+                    albums.allFilters.genresOcurrences.Add(el, 1);
+                else albums.allFilters.genresOcurrences[el] += 1;
+            }
+
+            foreach(var el in albums.allFilters.genresOcurrences)
+                System.Console.WriteLine($"{el.Key}, {el.Value}");
         }
     }
 }
