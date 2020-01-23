@@ -167,9 +167,9 @@ namespace MusicBrowserLogic
         }
 
         /// <summary>
-        /// 
+        /// Finds all Genres and their Ocurrences.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>String</returns>
         public string GetGenres()
         {
             var albums = new AlbumsCollection();
@@ -187,9 +187,9 @@ namespace MusicBrowserLogic
         }
 
         /// <summary>
-        /// 
+        /// Finds all Albums.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>List<Album></returns>
         public List<Album> GetAlbums()
         {
             List<Album> getAlbums = new List<Album>();
@@ -202,10 +202,10 @@ namespace MusicBrowserLogic
         }
 
         /// <summary>
-        /// 
+        /// Finds Album by Arist name or Album name.
         /// </summary>
         /// <param name="name"></param>
-        /// <returns></returns>
+        /// <returns>List<Album></returns>
         public List<Album> GetAlbumByName(string name)
         {
            List<Album> getAlbumNames = albums.FindAll(el => el.Name == name || el.Artist.Name == name);
