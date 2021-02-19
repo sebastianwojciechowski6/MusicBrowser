@@ -15,7 +15,7 @@ Window application where you can find music albums and informations about them.
 
 List of [contributors](https://github.com/sebastianwojciechowski6/MusicBrowser/contributors)
 
-## Acknowledgments
+## Acknowledgements
 
 * Project idea based on [Discogs](https://discogs.com) portal.
 * Big thanks to [djqbc](https://github.com/djqbc) for sharing his C# programming knowledge.
